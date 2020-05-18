@@ -9,10 +9,11 @@ using TShockAPI;
 using TShockAPI.DB;
 using System.IO;
 using System.Reflection;
+using Microsoft.Xna.Framework;
 
 namespace HousingDistricts
 {
-    [ApiVersion(1, 24)]
+    [ApiVersion(2, 1)]
     public class HousingDistricts : TerrariaPlugin
     {
 		public static HConfigFile HConfig { get { return HConfigFile.Config; } }
@@ -26,7 +27,7 @@ namespace HousingDistricts
 
 		public override string Author
 		{
-			get { return "Twitchy, Dingo, radishes, CoderCow and Simon311"; }
+			get { return "Twitchy, Dingo, radishes, CoderCow, Simon311 and Vednix"; }
 		}
 
 		public override string Description

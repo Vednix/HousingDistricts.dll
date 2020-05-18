@@ -4,6 +4,7 @@ using System.IO;
 using Terraria;
 using TShockAPI;
 using System.IO.Streams;
+using Microsoft.Xna.Framework;
 
 namespace HousingDistricts
 {
@@ -36,13 +37,13 @@ namespace HousingDistricts
 			{
 				{PacketTypes.Tile, HandleTile},
 				{PacketTypes.TileSendSquare, HandleSendTileSquare},
-				{PacketTypes.TileKill, HandleChest},
+				{PacketTypes.PlaceChest, HandleChest},
 				{PacketTypes.LiquidSet, HandleLiquidSet},
 				{PacketTypes.Teleport, HandleTeleport},
 				{PacketTypes.PaintTile, HandlePaintTile},
 				{PacketTypes.PaintWall, HandlePaintWall},
 				{PacketTypes.PlaceObject, HandlePlaceObject},
-				{PacketTypes.MassWireOperation, HandleMassWire}
+				//{PacketTypes.MassWireOperation, HandleMassWire}
 			};
 		}
 
