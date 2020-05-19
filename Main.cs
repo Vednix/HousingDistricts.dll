@@ -44,8 +44,8 @@ namespace HousingDistricts
 
 		internal static bool URunning = false;
 		public static bool ULock = false;
-		public const int UpdateTimeout = 800;
-		static readonly Timer Update = new System.Timers.Timer(500);
+		public const int UpdateTimeout = 50;
+		static readonly Timer Update = new System.Timers.Timer(25);
 
 		public override void Initialize()
 		{
